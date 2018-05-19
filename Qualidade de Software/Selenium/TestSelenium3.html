@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://automationpractice.com/" />
+<title>Email address - Inválido</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Email address - Inválido</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://automationpractice.com/index.php?controller=contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=p.form-group &gt; label</td>
+	<td>Email address</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitMessage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.alert.alert-danger &gt; p</td>
+	<td>There is 1 error</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=ol &gt; li</td>
+	<td>Invalid email address.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

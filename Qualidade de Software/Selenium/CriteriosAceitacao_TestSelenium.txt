@@ -1,0 +1,28 @@
+Simular o envio de mensagem de contato dos clientes com o site "http://automationpractice.com/index.php?controller=contact"
+
+
+--- HISTÓRIA
+
+COMO Cliente
+QUERO entrar em contato com a empresa por meio de mensagens,
+PARA tirar dúvidas dos produtos ou comunicar erro no site.
+
+--- CRITÉRIOS
+
+Critério #1: Dado que o cliente não selecionou uma das opções do Subject Heading deve ser exibida a mensagem: 
+	"There is 1 error Please select a subject from the list provided."
+
+Critério #2: Dado que o cliente selecionou a opção "Custumer service" do Subject Heading deve ser exibida a mensagem de orientação logo abaixo do campo: 
+	"For any question about a product, an order"
+
+Critério #3: Dado que o cliente selecionou a opção "Webmaster" do Subject Heading deve ser exibida a mensagem de orientação logo abaixo do campo: 
+	"If a technical problem occurs on this website"
+
+Critério #4: Dado que o cliente não informou um Email address deve ser exibida a mensagem: 
+	"There is 1 error Invalid email address."
+
+Critério #5: Dado que o cliente não informou Message deve ser exibida a mensagem: 
+	"There is 1 error The message cannot be blank."
+
+Critério #6: Dado que o cliente preencheu todos os campos corretamente e disparou o envio da mensagem deve ser exibida a mensagem:
+	"Your message has been successfully sent to our team."
